@@ -41,6 +41,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                ":vendor\\:package_name\\Providers\\:package_nameServiceProvider"
+            ],
+            "aliases": {
+                "AcachaEvents": ":vendor\\:package_name\\AcachaEvents"
+            }
         }
     },
     "config": {
