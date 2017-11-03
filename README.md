@@ -1,4 +1,4 @@
-# :package_name
+# Laravel package: :package_name
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -7,10 +7,19 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_website``` ```:author_email``` ```:vendor``` ```:package_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
+Put your Laravel package description here. Try and limit it to a paragraph or two, and maybe throw in a mention of what
 PSRs you support to avoid any confusion with users and contributors.
+
+## Install
+
+Install this package as any other Laravel package using composer:
+
+``` bash
+$ composer require :vendor/:package_name
+```
+
+This package use Laravel 5.5 package discovery (https://laravel.com/docs/5.5/packages#package-discovery) 
+so any other extra step is needed. 
 
 ## Structure
 
@@ -22,22 +31,6 @@ config/
 src/
 tests/
 vendor/
-```
-
-
-## Install
-
-Via Composer
-
-``` bash
-$ composer require :vendor/:package_name
-```
-
-## Usage
-
-``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
 ```
 
 ## Change log
